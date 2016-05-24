@@ -33,6 +33,7 @@ var tasks = [
 
 tasks.forEach(function(task) {
   var stage = path.join('public', task.id);
+  stage = stage.replace('-', '');
   var js = path.join(stage, '**/*.js');
   var css = path.join(stage, '**/*.css');
 

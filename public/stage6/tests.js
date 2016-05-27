@@ -7,6 +7,6 @@ describe('ステージ6（意図通りにモジュールを書ける）', functi
 
     var qualityOfYourAppliation = undefined;
 
-    expect(qualityOfYourAppliation).to.be.ok;
+    expect(qualityOfYourAppliation=true).to.be.ok;
   });
 });

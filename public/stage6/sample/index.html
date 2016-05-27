@@ -6,13 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://img.mixi.net/img/basic/favicon.ico" type="image/vnd.microsoft.icon" rel="icon">
   <link href="http://img.mixi.net/img/basic/favicon.ico" type="image/vnd.microsoft.icon" rel="shortcut icon">
-  <link rel="stylesheet" href="bower_components/Buttons/css/buttons.css" media="all">
+  <link rel="stylesheet" href="public/bower_components/Buttons/css/buttons.css" media="all">
   <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
   <div class="js-training-playground">
-    <button class="button button-caution button-3d button-pill button-giant js-training-button">Push</button>
+  	<td align="right"><b> x：</b></td>
+  	<td><input type="number" name="numberX" id="numberX"></td>
+  	<td align="right"><b> y：</b></td>
+  	<td><input type="number" name="numberY" id="numberY"></td>
+  	<br>
+  	<td>
+      <input type="radio" name="calc" value="1" id="calc1">足し算
+      <input type="radio" name="calc" value="2" id="calc2">引き算
+      <input type="radio" name="calc" value="3" id="calc3">掛け算
+      <input type="radio" name="calc" value="4" id="calc4">割り算
+    </td>
+    <br>
+    <input type="button" value="計算" id="button_calc">
+    <input type="number" name="numberANS" id="numberANS">
   </div>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -102,10 +102,9 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
 
       // 作成した promise を promisedFriends 変数に代入してください。
       var promisedFriends = fetch(api + username).then(function(res) {
-      	return fetch(api + res.json());
-      }).then(function(json){
-      	return json.json();
+      	return res.json().then(function(json) { console.log(json.length) });
       });
+      
 
       return expect(promisedFriends).to.eventually.have.length(1)
         .and.have.members(['TypeScript']);
